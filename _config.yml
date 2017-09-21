@@ -224,6 +224,8 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
+port: 3000
+host: 0.0.0.0
 
 # Theme
 theme: minimal-mistakes-jekyll

@@ -11,7 +11,8 @@ source "https://rubygems.org"
 gem "jekyll", "3.5.1"
 
 # Theme
-gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :branch => "susy-3-upgrade"
+gem "minimal-mistakes-jekyll"
+
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
