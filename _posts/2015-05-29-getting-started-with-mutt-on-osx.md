@@ -27,7 +27,7 @@ My setup is way simpler, since mutt is able to send emails without a third-party
 
 This is how mutt looks like:
 
-![mutt](https://s3-eu-west-1.amazonaws.com/201505-blog/mutt-blog-1.gif )
+![mutt](/_assets/images/mutt/mutt-blog-1.gif )
 
 
 ## Get mutt
@@ -129,14 +129,14 @@ Now, it is possible to configure mutt to search the contacts database using `TAB
 set query_command="pc_query -m '%s'"
 ```
 
-![auto completion](https://s3-eu-west-1.amazonaws.com/201505-blog/mutt-blog-3.gif)
+![auto completion](/_assets/images/mutt/mutt-blog-3.gif)
 
 ## The sidebar
 
 The sidebar it's an handy right-side panel that shows a configurable number of IMAP folders and the number of messages that each folder contains.
 I keep it hidden by default, and display it when needed.
 
-![sidebar](https://s3-eu-west-1.amazonaws.com/201505-blog/mutt-blog-2.gif)
+![sidebar](/_assets/images/mutt/mutt-blog-2.gif)
 
 The folders displayed in the sidebar must be specified in the .muttrc file, like so:
 
@@ -301,7 +301,7 @@ Once the "mailcap" file is sorted, mutt can auto-open HTML emails with an entry 
       auto_view text/html                                      # view html automatically
       alternative_order text/plain text/enriched text/html     # save html for last
 
-![autoopen](https://s3-eu-west-1.amazonaws.com/201505-blog/mutt-blog-4.gif)
+![autoopen](/_assets/images/mutt/mutt-blog-4.gif)
 
 ## Colors
 

@@ -40,7 +40,7 @@ to your `.vimrc` file.
 
 This is how Java and Groovy files look like in Vim:
 
-![Syntax highlighting](https://s3-eu-west-1.amazonaws.com/201310-blog/01_vim_java.jpg)
+![Syntax highlighting](/_assets/images/vim-java/01_vim_java.jpg)
 
 If you are using a recent version of MacVim (7.4 or higher) chances are that the Groovy syntax file is [broken](https://groups.google.com/forum/?fromgroups#!topic/vim_dev/4m4FJGmkgb0).
 
@@ -78,7 +78,7 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
 
 This is an example of UltiSnips in action:
 
-![Ultisnips](https://s3-eu-west-1.amazonaws.com/201310-blog/02_snippets.gif)
+![Ultisnips](/_assets/images/vim-java/02_snippets.gif)
 
 UltiSnips snippets use placeholders for inserting custom data:
 
@@ -186,7 +186,7 @@ In this short video, you can see a couple of Eclim's features:
 - Automatically adding an import (`:JavaImport`)
 - Automatically adding a getter and setter (`:JavaGetSet`)
 
-![Eclim](https://s3-eu-west-1.amazonaws.com/201310-blog/03_eclim.gif)
+![Eclim](/_assets/images/vim-java/03_eclim.gif)
 
 For a complete list of Eclim commands, please refer to this [cheatsheet](http://eclim.org/cheatsheet.html). 
 
@@ -218,7 +218,7 @@ let delimitMate_expand_cr = 1
 
 Check out `help delimitMate` to learn about other options that may better serve your workflow.
 
-![Delimitmate](https://s3-eu-west-1.amazonaws.com/201310-blog/04_delimitmate.gif)
+![Delimitmate](/_assets/images/vim-java/04_delimitmate.gif)
 
 ## File browsing
 
@@ -292,7 +292,7 @@ I'm currently working on a solution (based on [this](http://forums.gradle.org/gr
 
 This is how the test feedback loop looks like:
 
-![Test loop](https://s3-eu-west-1.amazonaws.com/201310-blog/05_testdemo.gif)
+![Test loop](/_assets/images/vim-java/05_testdemo.gif)
 
 ### Maven
 
