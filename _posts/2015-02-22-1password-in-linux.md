@@ -9,7 +9,7 @@ tags:
 
 Lately, my long-lasting love for Apple products has been fading. I ditched my iPhone 6+ for a [OnePlus One](https://oneplus.net/) and I relegated my MBP to mostly photo-editing tasks. I'm typing this from a fresh installation of [Xubuntu 14.10](http://xubuntu.org/), which I have been using in the past and I tend to prefer  to the heavy-weight Ubuntu.
 
-My totally most used app in the Apple eco-system is [Agile Bits 1Password](https://agilebits.com/onepassword).In fact, what I miss most in my new Android phone is the fingerprint reader integration with 1Password. I have to type my rather long and cumbersome password every time I need to look for a piece of encrypted info. Agile Bits doesn't support Linux at all. For Linux users, they offer a web interface called [1Password Anywhere](https://guides.agilebits.com/1password-mac/5/en/topic/1passwordanywhere). It's Javascript based and runs locally. Sub-optimal, if you ask me.
+My totally most used app in the Apple eco-system is [Agile Bits 1Password](https://agilebits.com/onepassword). In fact, what I miss most in my new Android phone is the fingerprint reader integration with 1Password. I have to type my rather long and cumbersome password every time I need to look for a piece of encrypted info. Agile Bits doesn't support Linux at all. For Linux users, they offer a web interface called [1Password Anywhere](https://guides.agilebits.com/1password-mac/5/en/topic/1passwordanywhere). It's Javascript based and runs locally. Sub-optimal, if you ask me.
 
 ![Silvrback blog image](/_assets/images/1password-linux/1password_4_large.png)
 
@@ -66,10 +66,10 @@ I had to figure it out by checking out a __[keyhook.c](http://hg.icculus.org/icc
 For the binding to work, you need to press the keys in the right sequence, which is:
 
 ```
-Alt -&gt; Win -&gt; \
+Alt -> Win -> \
 ```
 
- By pressing the keys at the same time, or the Win key first, will cause the popup to stay well hidden.
+By pressing the keys at the same time, or the Win key first, will cause the popup to stay well hidden.
 
 This is the password prompt box that pops-up on pressing the "magic combo".
 
@@ -81,7 +81,7 @@ The key binding works everywhere, so it is possible to access the encrypted info
 To avoid leaving a terminal tab opened just for 1pass, I go like this:
 
 ```
-./1pass &amp; exit
+./1pass & exit
 ```
 
 Edit:

@@ -350,10 +350,10 @@ Create the Tiny Tiny RSS database. Don't forget to keep the password in a safe p
 ```
 mysql -u root -p
 
-mysql&gt; create database ttRssDB;
-mysql&gt; grant all on ttRssDB.* to ttRss@localhost identified by 'password';
-mysql&gt; flush privileges;
-mysql&gt; \q
+mysql> create database ttRssDB;
+mysql> grant all on ttRssDB.* to ttRss@localhost identified by 'password';
+mysql> flush privileges;
+mysql> \q
 ```
 
 The first time you hit the url 'http://rss.awesomehosted.com', a set-up page is displayed. Admittedly, the setup process of tt-rss it's a bit quirky.

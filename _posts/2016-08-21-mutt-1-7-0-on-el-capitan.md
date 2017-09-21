@@ -1,5 +1,5 @@
 ---
-title: "Getting started with Mutt on OSX"
+title: "Mutt 1.7.0 on El Capitan"
 categories:
   - productivity
 tags:

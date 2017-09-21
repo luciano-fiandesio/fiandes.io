@@ -64,7 +64,7 @@ If you see `+python` you are good to go.
 
 Install UltiSnips in your `~/.vim/bundle` folder:
 
-```
+```bash
 git clone https://github.com/SirVer/ultisnips.git 
 ```
 
@@ -90,11 +90,11 @@ endsnippet
 
 The previous snippet (triggered by `co`) create the following statement:
 
-```
+```java
 public static final String var = ;
 ```
 
-and places the cursor on `String`. By pressing &lt;CTRL+j&gt; you can move the cursor to the remaining placeholders, defined with `${1}`, `${2}` and so on. The placeholder marked with `${0}` is always the last one the cursor will move to.
+and places the cursor on `String`. By pressing \<CTRL+j\> you can move the cursor to the remaining placeholders, defined with `${1}`, `${2}` and so on. The placeholder marked with `${0}` is always the last one the cursor will move to.
 
 ## Indent highlight
 
@@ -192,7 +192,7 @@ For a complete list of Eclim commands, please refer to this [cheatsheet](http://
 
 ### Supertab
 
-The second auto completition plugin is [Supertab](https://github.com/ervandew/supertab). It essentially allows completing using the &lt;TAB&gt; key instead of the standard &lt;CTRL+X&gt;&lt;CTRL+N&gt;, when in insert mode. It plays nicely with Eclim, even though some fiddling is [required](https://github.com/luciano-fiandesio/dotfiles/blob/master/.vim/config/supertab.vim).
+The second auto completition plugin is [Supertab](https://github.com/ervandew/supertab). It essentially allows completing using the \<TAB\> key instead of the standard \<CTRL+X\>\<CTRL+N\>, when in insert mode. It plays nicely with Eclim, even though some fiddling is [required](https://github.com/luciano-fiandesio/dotfiles/blob/master/.vim/config/supertab.vim).
 
 To install Supertab, clone the repo in your `.vim/bundle` folder:
 
@@ -232,18 +232,18 @@ Install NERD tree by cloning the Github repo in your `bundle` folder.
 git clone https://github.com/scrooloose/nerdtree
 ```
 
-My NERD tree [configuration](https://github.com/luciano-fiandesio/dotfiles/blob/master/.vim/config/nerdtree.vim)  is kept to a minimum: I have only mapped &lt;CTRL-d&gt; to toggle the file browsing pane.
+My NERD tree [configuration](https://github.com/luciano-fiandesio/dotfiles/blob/master/.vim/config/nerdtree.vim)  is kept to a minimum: I have only mapped \<CTRL-d\> to toggle the file browsing pane.
 
 ```
-nmap &lt;leader&gt;d :NERDTreeToggle&lt;CR&gt;
+nmap <leader>d :NERDTreeToggle<CR>
 ```
 
 ### CtrlP
 
-If you have been using Vim for a while, [CtrlP](https://github.com/kien/ctrlp.vim) is surely in your `bundle` folder. It's a fuzzy finder for files, buffers, MRU and even tags. I have mapped CtrlP to &lt;CTRL+t&gt; and I can use the binding to type the first letters of the file I want to open.
-CtrlP is the equivalent of &lt;CTRL + ALT + N&gt; in IntelliJ Idea and &lt;CTRL-SHIFT-T&gt; in Eclipse.
+If you have been using Vim for a while, [CtrlP](https://github.com/kien/ctrlp.vim) is surely in your `bundle` folder. It's a fuzzy finder for files, buffers, MRU and even tags. I have mapped CtrlP to \<CTRL+t\> and I can use the binding to type the first letters of the file I want to open.
+CtrlP is the equivalent of \<CTRL + ALT + N\> in IntelliJ Idea and \<CTRL-SHIFT-T\> in Eclipse.
 
-For example, if I want to open a file named `LibraryTest.java` I can type &lt;CTRL+t LT&gt; (LT = **L**ibrary**T**est). This plugin is indispensable when working on large projects with hundreds of files.   
+For example, if I want to open a file named `LibraryTest.java` I can type \<CTRL+t LT\> (LT = **L**ibrary**T**est). This plugin is indispensable when working on large projects with hundreds of files.   
 
 Install CtrlP by cloning the repo in your Pathogen's `bundle` folder: 
 
@@ -254,8 +254,8 @@ git clone https://github.com/kien/ctrlp.vim
 These are my setting for the plugin:
 
 ```    
-" Use &lt;leader&gt;t to open ctrlp
-let g:ctrlp_map = '&lt;leader&gt;t'
+" Use <leader>t to open ctrlp
+let g:ctrlp_map = '<leader>t'
 " Ignore these directories
 set wildignore+=*/build/**
 " disable caching
@@ -278,15 +278,15 @@ gradle test
 Vim is built with support for compiler integration and the MacVim distribution comes with over 60 compiler configurations. Unfortunately Gradle is not among the supported compilers so I had to create my [own](https://github.com/luciano-fiandesio/dotfiles/blob/master/.vim/compiler/gradle.vim) Gradle compiler file, with a little help from [Niklas](https://github.com/niklasl).
 
 With the Gradle compiler file in place, I can now set the compiler to Gradle using `:compiler gradle` and run my tests by typing `make test`. This solution works for both Java and Groovy projects, as long as you use Gradle as a build tool.
-I have mapped everything to the &lt;F4&gt; key, like so:
+I have mapped everything to the \<F4\> key, like so:
 
 ```
-map &lt;F4&gt; :w&lt;CR&gt; :compiler gradle&lt;CR&gt; :make test&lt;CR&gt;:cw 4&lt;CR&gt;
+map <F4> :w<CR> :compiler gradle<CR> :make test<CR>:cw 4<CR>
 ```
 
-When pressing &lt;F4&gt;, Vim saves the current file, run the Gradle compilation and open the [QuickFix](http://vimdoc.sourceforge.net/htmldoc/quickfix.html) window if there are compilation errors or test do not pass.
+When pressing \<F4\>, Vim saves the current file, run the Gradle compilation and open the [QuickFix](http://vimdoc.sourceforge.net/htmldoc/quickfix.html) window if there are compilation errors or test do not pass.
 
-There is one gotcha: the QuickFix window is supposed to show compilation errors that you can "navigate" using &lt;:cn&gt; or &lt;:cp&gt; and even jump to the file reported in the errors list. This functionality is based on the assumption that the compiler output is properly parsed, which is not the case for Gradle. Still, I'm able to display the compilation/test errors in the QuickFix window.
+There is one gotcha: the QuickFix window is supposed to show compilation errors that you can "navigate" using \<:cn\> or \<:cp\> and even jump to the file reported in the errors list. This functionality is based on the assumption that the compiler output is properly parsed, which is not the case for Gradle. Still, I'm able to display the compilation/test errors in the QuickFix window.
 
 I'm currently working on a solution (based on [this](http://forums.gradle.org/gradle/topics/retrieve_failed_test_file_and_line_number) forum entry) for having Gradle and the QuickFix window to play together nicely. 
 

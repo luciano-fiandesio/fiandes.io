@@ -36,7 +36,9 @@ Vanilla mutt lacks some of the essential stuff, which is only available through 
 In OSX, I can simply use Homebrew and get it done with a simple command.
 
 ```
-brew install kevwil/patches/mutt --with-gpgme --with-trash-patch --with-sidebar-patch --with-confirm-attachment-patch
+brew install kevwil/patches/mutt \
+    --with-gpgme --with-trash-patch \
+    --with-sidebar-patch --with-confirm-attachment-patch
 ```
 
 ## Talking to fastmail
@@ -49,7 +51,7 @@ This is the **very** basic configuration required to fetch and send email throug
 set my_server       =   mail.messagingengine.com
 set my_smtp_server  =   mail.messagingengine.com
 set my_user         =   xxx@fastmail.fm
-set my_pass         =   "`security find-internet-password -g -a xxx@fastmail.fm 2&gt;&amp;1| perl -e 'if (&lt;STDIN&gt; =~ m/password: "(.*)"$/ ) { print $1; }'`"
+set my_pass         =   "`security find-internet-password -g -a lfi@fastmail.fm 2>&1| perl -e 'if (<STDIN> =~ m/password: "(.*)"$/ ) { print $1; }'`"
     
 set record          =   "imaps://$my_server/INBOX.Sent Items"
 set postponed       =   "imaps://$my_server/INBOX.Drafts"
@@ -89,7 +91,7 @@ sudo /usr/bin/security -v add-internet-password -a xxx@fastmail.fm -s mail.messa
 mutt uses aliases to map a name to an email address. Aliases are stored in a file using a simple format:
 
 ```
-alias john John Doe &lt;johndoe@email.com&gt;
+alias john John Doe <johndoe@email.com>
 ```
 
 The default key binding to add an address from the currently opened mail is `a`. 
@@ -262,7 +264,7 @@ mutt offers rudimentary [macros](http://dev.mutt.org/trac/wiki/MuttGuide/Macros)
 To get an idea of how a macro looks like, take a look at this macro. It is triggered by the `TAB` key and it's only available in the index menu (the message list). When triggered, it shows the next unread message and press `enter`. 
 
 ```
-macro index   &lt;tab&gt;      &lt;next-unread&gt;&lt;enter&gt; 
+macro index   <tab>      <next-unread><enter> 
 ```
 
 [Here](https://github.com/luciano-fiandesio/dotfiles/blob/master/.mutt/bindings.muttrc) is my binding file. 
