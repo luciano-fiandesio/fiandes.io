@@ -64,7 +64,7 @@ If you see `+python` you are good to go.
 
 Install UltiSnips in your `~/.vim/bundle` folder:
 
-```bash
+```
 git clone https://github.com/SirVer/ultisnips.git 
 ```
 
@@ -165,7 +165,7 @@ Finally, you must [create](http://eclim.org/vim/core/project.html#projectcreate)
 
 My workflow revolves around [Gradle](http://www.gradle.org/), a Groovy based build tool which is getting a phenomenal amount of traction. This is what I do (using a [script](https://github.com/luciano-fiandesio/dotfiles/blob/master/.functions#L234)):
 
-```
+```shell
 mkdir my-awesome-project && cd $_
 gradle setupBuild --type java-library
 perl -i -lne 'print $_;print "apply plugin: \x27eclipse\x27" if(/apply/);' build.gradle    
