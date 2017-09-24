@@ -28,22 +28,15 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
+
 staticman:
-  #allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
-  #commitMessage          : "New comment."
-  #filename               : comment-{@timestamp}
-  #format                 : "yml"
-  #moderation             : true
-  #path                   : "docs/_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
-  #requiredFields         : ['name', 'email', 'message']
-  #transforms:
-  #  email                : "md5"
-  #generatedFields:
-  #  date:
-  #    type               : "date"
-  #    options:
-  #      format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+ 
+# reCAPTCHA keys
+reCaptcha:
+  siteKey: "6Ldi5zEUAAAAAKPUfRqwnUaaW9QyyKlqmT6Dtfm9"
+  secret: "k76soAeJLhT3ZAKIEKYGuX2jAjSCDGlUz4PhkAcEvOdqQBPn+AibzyztUYZsMUSpga+u715D61ApR8axsMQLCRoaOsOGhMyUlz6ggmq5N4+zwqZ9hPs4fHK8bIyXpIv1bbTrdrzX+HFsTGUQjrRXelOO7JMO9yz1NNShUkBJVBk="
+
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
@@ -78,7 +71,7 @@ analytics:
 # Site Author
 author:
   name             : "Luciano Fiandesio"
-  avatar           : "/_assets/images/luciano-bio.jpg"
+  avatar           : "/assets/images/luciano-bio.jpg"
   bio              : "Generating bits since 1984. Unimpressed by the future"
   location         : "Zurich/Berlin"
   email            : "luciano@fiandes.io"

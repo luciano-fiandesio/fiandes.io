@@ -166,7 +166,7 @@ This news made me a bit nervous, but so far it seems that the new company is del
 
 Resilio Sync is essentially a Dropbox replacement: you should be aware that it is a closed-source software. There are open-source alternatives, such as [SyncThing][24] or [Seafile][25]. I consider BitTorrent Sync (now Resilio Sync) the easiest to setup and to run and the more reliable.
 
-![Silvrback blog image](/_assets/images/self-hosted-apps/resilio_large.png)
+![Silvrback blog image](/assets/images/self-hosted-apps/resilio_large.png)
 
 Before installing the Sync client, create the folder where the synchronized files will be stored. 
 
@@ -257,7 +257,7 @@ In case you haven't configured the A records yet, just add an entry to the `/etc
 It is very stable and (kind of) easy to setup. The data are stored on SQLite, but for large dataset it is reccommended to use MySQL. I use SQLite because it's easy to back up :)
 
 
-![Silvrback blog image](/_assets/images/self-hosted-apps/baikal_large.jpg)
+![Silvrback blog image](/assets/images/self-hosted-apps/baikal_large.jpg)
 
 ```
 # install the dependencies
@@ -306,7 +306,7 @@ The url for the calendar is: `http://dav.awesomehosted.com/cal.php/calendars/joh
 
 [Tiny Tiny RSS][5] (tt-rss for brevity) is a marvellous feed reader, which I use daily. There are [lots of self-hosted][21] feed readers out there: I have tried few of them, and I settled with tt-rss. The set-up process is similar to the one used for the other applications.
 
-![Silvrback blog image](/_assets/images/self-hosted-apps/tiny-tiny-rss_large.png)
+![Silvrback blog image](/assets/images/self-hosted-apps/tiny-tiny-rss_large.png)
 
 Install some required PHP dependencies.
 
@@ -376,7 +376,7 @@ My wiki is probably the most important part of my digital life. I keep track of 
 
 A wiki instead forces me to curate the information that I want to preserve. A wiki is akin to having a paper notebook. It is slower, but it forces me to think about the actual bit of data that I'm working on.
 
-![Silvrback blog image](/_assets/images/self-hosted-apps/dokuwiki_large.png)
+![Silvrback blog image](/assets/images/self-hosted-apps/dokuwiki_large.png)
 
 [Docuwiki][6] is a very simple wiki platform with a couple of advantages over other wikis: it has a large plugin ecosystem and it is file-based, so super-easy to back-up. No database, less attack-surface. The installation is also straightforward.
 
@@ -405,7 +405,7 @@ Restart Apache and test the installation by browsing to `http://wiki.awesomehost
 
 [Piwigo][7] is a photo gallery web-application. I use it to share photo galleries with my family. I switched from the very stylish-looking [Lychee][22] to Piwigo because Lychee doesn't support custom ordering of photos in a gallery.
 
-![Silvrback blog image](/_assets/images/self-hosted-apps/piwigo_large.jpg)
+![Silvrback blog image](/assets/images/self-hosted-apps/piwigo_large.jpg)
 
 Piwigo setup is straightforward. Start by creating a database. Don't forget to change the password.
 
